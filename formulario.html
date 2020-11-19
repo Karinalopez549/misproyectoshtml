@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="formulario.css">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h1>Formulario de Registro</h1>
+	
+	<form class="form">
+		<div>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre">
+		</div>
+
+		<div>
+			<label for="apellido">Apellido:</label>
+			<input type="text" id="apellido" name="apellido" value="">
+		</div>
+		<div>
+			<label for="genero">Genero</label>
+			<input type="radio" name="genero" value="Mujer"> Mujer
+			<input type="radio" name="genero" value="hombre"> Hombre
+			<input type="radio" name="genero" value="otro"> Otro
+		</div>
+		<div>
+			<label for="correo">Correo:</label>
+			<input type="text" id="correo" name="correo" value="" placeholder="correo@ejemplo.com">
+        </div>
+        <div>
+            <label for="ciudad">Ciudad:</label>
+            <input type="radio"  name="Rosario" value="Rosario"> Rosario
+        </div>
+        <div>
+            <label for="otro">Otro</label>
+            <input type="text"  id="otro" name="otro" value=""> 
+        </div>
+        <div>
+			<label for="comentario">Descripción:</label> <br>
+			<textarea name="comentario" id="comentario" cols="20" rows="5"></textarea>
+		</div>
+            <div>
+                <label for="información"> Deseo recibir información sobre novedades y ofertas </label>
+        <input type="radio" id="informacion" value="">
+            </div>
+            <div>
+                <label for="términos">Declaro haber leido y aceptar las condiciones 
+                generales del programa y la normativa sobre protección de datos</label>
+                <input type="radio" name="Declaro" value="declaro">
+            </div>
+            <div>
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="cancelar" value="Cancelar">
+		</div>
+
+	</form>
+</body>
+</html>
